@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-export default function Home(): JSX.Element {
+export default async function Home(): Promise<JSX.Element> {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -111,3 +111,8 @@ export default function Home(): JSX.Element {
     </main>
   )
 }
+function delay(arg0: number) {
+  //Delay
+  return new Promise((resolve) => setTimeout(resolve, arg0))
+}
+

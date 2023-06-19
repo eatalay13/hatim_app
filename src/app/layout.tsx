@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
-import { PropsWithChildren } from 'react'
+import { PropsWithChildren, Suspense } from 'react'
 import './globals.css'
+import Loading from './loading'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,13 +11,17 @@ export const metadata = {
 }
 
 interface Props extends PropsWithChildren {
-  
+
 }
 
 function RootLayout({ children }: Props): JSX.Element {
   return (
     <html lang="tr">
-      <body className={inter.className}>{children}</body>
+      <Suspense fallback={<Loading />}>
+        <body className={inter.className}>
+          {children}
+        </body>
+      </Suspense>
     </html>
   )
 }
