@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import Header from "@/components/header";
 import { fontLexend } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="tr">
       <body className={fontLexend.className}>
+        <Header />
         <main>
           {children}
           <Footer />
