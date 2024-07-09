@@ -7,7 +7,11 @@ import "@/styles/globals.css";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: {
+    template: "%s | Kur'an Hatim Uygulaması",
+    absolute: "Hatim",
+    default: "Kur'an Hatim Uygulaması",
+  },
   description: siteConfig.description,
 };
 

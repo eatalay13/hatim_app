@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Blog",
+};
+
 async function BlogPage() {
     await new Promise(resolve => setTimeout(resolve, 3000));
     return (
