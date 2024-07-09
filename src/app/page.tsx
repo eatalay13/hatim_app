@@ -8,10 +8,9 @@ export default function HomePage() {
     <div className="">
       <section className="py-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-
         </div>
         <div className="container mx-auto relative z-10">
-          <h2 className="text-5xl font-bold mb-4 text-emerald-800">Kur&#39;an-ı Kerim&#39;i Keşfedin ve Paylaşın</h2>
+          <h2 className="text-5xl font-bold mb-4 text-emerald-800">Kur'an-ı Kerimi Keşfedin ve Paylaşın</h2>
           <p className="text-xl mb-8 text-emerald-700">Modern ve kullanıcı dostu hatim uygulaması ile manevi yolculuğunuzu zenginleştirin.</p>
           <button className="bg-yellow-500 text-emerald-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition duration-300 shadow-lg">Hemen Başlayın</button>
         </div>

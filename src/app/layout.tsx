@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import ScrollToTop from "@/components/scroll-up";
 import { fontLexend } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
           <Footer />
         </main>
+        <ScrollToTop />
       </body>
     </html>
   );
