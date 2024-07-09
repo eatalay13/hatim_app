@@ -13,7 +13,7 @@ interface HatimGroupCardProps {
 const HatimGroupCard: React.FC<HatimGroupCardProps> = ({ title, participants, duration, completionDate }) => (
     <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
         <div className="relative">
-            <Image className="w-full" src="/images/hatim-group-default.jpg" alt="Hatm-i Şerif Takibi" width={500} height={500} quality={100} />
+            <Image className="w-full hover:transform hover:scale-110 transition-transform" src="/images/hatim-group-default.jpg" alt="Hatm-i Şerif Takibi" width={500} height={500} quality={100} />
             <div className="absolute top-2 left-2 bg-white rounded-full p-1">
                 <div className="w-4 h-4 rounded-full border-2 border-green-500"></div>
             </div>
