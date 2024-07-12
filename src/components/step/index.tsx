@@ -6,10 +6,10 @@ interface StepProps {
 
 const Step: React.FC<StepProps> = ({ number, title, description }) => (
   <div className="text-center">
-    <div className="w-16 h-16 bg-yellow-500 text-emerald-800 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">
+    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-500 text-2xl font-bold text-emerald-800">
       {number}
     </div>
-    <h4 className="text-xl font-semibold mb-2 text-emerald-700">{title}</h4>
+    <h4 className="mb-2 text-xl font-semibold text-emerald-700">{title}</h4>
     <p>{description}</p>
   </div>
 );

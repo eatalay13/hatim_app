@@ -6,42 +6,42 @@ import { Book, Bookmark, Users } from 'lucide-react';
 export default function HomePage() {
   return (
     <div className="">
-      <section className="py-20 text-center relative overflow-hidden">
+      <section className="relative overflow-hidden py-20 text-center">
         <div className="absolute inset-0 z-0"></div>
-        <div className="container mx-auto relative z-10">
-          <h2 className="text-5xl font-bold mb-4 text-emerald-800">
+        <div className="container relative z-10 mx-auto">
+          <h2 className="mb-4 text-5xl font-bold text-emerald-800">
             Kur'an-ı Kerimi Keşfedin ve Paylaşın
           </h2>
-          <p className="text-xl mb-8 text-emerald-700">
+          <p className="mb-8 text-xl text-emerald-700">
             Modern ve kullanıcı dostu hatim uygulaması ile manevi yolculuğunuzu
             zenginleştirin.
           </p>
-          <button className="bg-yellow-500 text-emerald-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-400 transition duration-300 shadow-lg">
+          <button className="rounded-full bg-yellow-500 px-8 py-3 text-lg font-semibold text-emerald-900 shadow-lg transition duration-300 hover:bg-yellow-400">
             Hemen Başlayın
           </button>
         </div>
       </section>
 
-      <section id="features" className="py-16 bg-white">
+      <section id="features" className="bg-white py-16">
         <div className="container mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12 text-emerald-800">
+          <h3 className="mb-12 text-center text-3xl font-bold text-emerald-800">
             Özellikler
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <FeatureCard
-              icon={<Book className="w-12 h-12 text-yellow-500" />}
+              icon={<Book className="h-12 w-12 text-yellow-500" />}
               title="Kur'an Okuma"
               description="Özel tasarlanmış arayüz ile Kur'an-ı Kerim'i kolayca okuyun ve dinleyin."
               image="/api/placeholder/300/200"
             />
             <FeatureCard
-              icon={<Users className="w-12 h-12 text-yellow-500" />}
+              icon={<Users className="h-12 w-12 text-yellow-500" />}
               title="Toplu Hatim"
               description="Diğer kullanıcılarla birlikte hatimlere katılın ve sevabınızı artırın."
               image="/api/placeholder/300/200"
             />
             <FeatureCard
-              icon={<Bookmark className="w-12 h-12 text-yellow-500" />}
+              icon={<Bookmark className="h-12 w-12 text-yellow-500" />}
               title="İlerleme Takibi"
               description="Kişisel ve toplu hatimlerinizin ilerlemesini kolayca takip edin."
               image="/api/placeholder/300/200"
@@ -50,12 +50,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="how-it-works" className="py-16 bg-emerald-50">
+      <section id="how-it-works" className="bg-emerald-50 py-16">
         <div className="container mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12 text-emerald-800">
+          <h3 className="mb-12 text-center text-3xl font-bold text-emerald-800">
             Nasıl Çalışır?
           </h3>
-          <div className="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0">
+          <div className="flex flex-col items-center justify-around space-y-8 md:flex-row md:space-y-0">
             <Step
               number={1}
               title="Üye Olun"
@@ -77,16 +77,16 @@ export default function HomePage() {
 
       <section
         id="recent-hatims"
-        className="relative py-32 bg-[#faf8f3] px-4 md:px-0 bg-no-repeat bg-center"
+        className="relative bg-[#faf8f3] bg-center bg-no-repeat px-4 py-32 md:px-0"
         style={{
           backgroundImage: "url('/images/background/courses-two_bg.png')",
         }}
       >
         <div className="container mx-auto">
-          <h3 className="text-lg uppercase font-semibold text-center mb-12 text-emerald-800">
+          <h3 className="mb-12 text-center text-lg font-semibold uppercase text-emerald-800">
             Popüler Hatim Grupları
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {Array.from({ length: 8 }).map((_, index) => (
               <HatimGroupCard
                 key={index}

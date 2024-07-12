@@ -13,17 +13,17 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   image,
 }) => (
-  <div className="bg-emerald-50 p-6 rounded-lg shadow-md text-center">
+  <div className="rounded-lg bg-emerald-50 p-6 text-center shadow-md">
     <Image
       src={image}
       alt={title}
-      className="w-full h-40 object-cover rounded-t-lg mb-4"
+      className="mb-4 h-40 w-full rounded-t-lg object-cover"
       width={250}
       height={250}
       quality={100}
     />
     <div className="mb-4 flex justify-center">{icon}</div>
-    <h4 className="text-xl font-semibold mb-2 text-emerald-700">{title}</h4>
+    <h4 className="mb-2 text-xl font-semibold text-emerald-700">{title}</h4>
     <p>{description}</p>
   </div>
 );

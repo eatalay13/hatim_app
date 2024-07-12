@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-emerald-700/70 backdrop-blur-md text-white p-4 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold flex items-center">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-emerald-700/70 p-4 text-white shadow-lg backdrop-blur-md transition-all duration-300">
+      <div className="container mx-auto flex items-center justify-between">
+        <h1 className="flex items-center text-2xl font-bold">
           <Image
             src="/next.svg"
             alt="Logo"

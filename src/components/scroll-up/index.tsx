@@ -107,8 +107,8 @@ const ScrollToTop: FC<ScrollToTopProps> = ({
           className="fixed bottom-5 right-5 cursor-pointer"
           onClick={scrollToTop}
         >
-          <div className="relative w-10 h-10">
-            <svg className="w-full h-full" viewBox="0 0 100 100">
+          <div className="relative h-10 w-10">
+            <svg className="h-full w-full" viewBox="0 0 100 100">
               <circle
                 className="text-gray-300"
                 strokeWidth="4"
@@ -130,7 +130,7 @@ const ScrollToTop: FC<ScrollToTopProps> = ({
                 strokeDashoffset={289.027 - (progress / 100) * 289.027}
               />
             </svg>
-            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+            <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
               <ArrowUp className="text-yellow-500" size={24} />
             </div>
           </div>
